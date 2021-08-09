@@ -1,0 +1,44 @@
+<addon id="plugin.video.outlaw" name="[COLOR orange]OUTLAW[/COLOR]" provider-name="123KingKong" version="1.0">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="context.venom" />
+		<import addon="script.module.myaccounts" />
+		<import addon="script.module.fenomscrapers" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.beautifulsoup4" />
+		<import addon="script.module.metahandler" optional="true" />
+		<import addon="plugin.video.youtube" optional="true" />
+	</requires>
+	<extension library="venom.py" point="xbmc.python.pluginsource">
+		<provides>video</provides>
+	</extension>
+	<extension library="service.py" point="xbmc.service" start="startup" />
+	<extension library="resources/lib/" point="xbmc.python.module" /> 
+	<extension point="xbmc.addon.metadata">
+		<reuselanguageinvoker>true</reuselanguageinvoker>
+		<summary lang="en">[B][COLOR orange]OUTLAW[/COLOR][/B] - We do not host any of the contents streamed</summary>
+		<description lang="en">[B][COLOR orange]OUTLAW[/COLOR][/B][CR] This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR]The author does not host any of the content in this addon and takes no responsibility for content found</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum />
+		<website>https://github.com/123Venom/plugin.video.venom</website>
+		<source>https://github.com/123Venom/plugin.video.venom</source>
+		<disclaimer lang="en">The author of this addon does not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/screenshot001.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot002.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
+		</assets>
+		<news>
+[B][COLOR red]Update - v6.1.3 - Aug. 05, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Added new setting [B]"Prefer TMDb artwork (poster, fanart)"[/B] in the [B]"General"[/B] category.  Now you can set TMDb as preferred artwork even if retrieving fanart.tv for for it's clearlogo, clearart, etc.[/I]
+[COLOR yellow]--[/COLOR][I] Prem-Emptive Termination quit before hitting it's limit.  This is now fixed.[/I]
+[COLOR yellow]--[/COLOR][I] fanart.tv now has it's own database.  No longer will clearing cache needlessly wipe out the fanart.tv artwork.  I've also elected to not allow clearing of this database as most often it is completely unnecessary to do so.  The cached results will be held for one week, at which time item data will be updated.[/I]
+[COLOR yellow]--[/COLOR][I] Previously fanart.tv [B]season posters[/B] were not used.  This has now been added and also respects the new setting [B]"Prefer TMDb artwork (poster, fanart)"[/B].[/I]
+[COLOR yellow]--[/COLOR][I] Added [B]"View Changelog"[/B] to the [B]Shortcuts[/B] setting category.[/I]
+[COLOR yellow]--[/COLOR][I] There is a new context menu item called [B]"Save to ? Cloud"[/B] for the Source Select xml.  Your Debrid service will be listed.  You can now save a cached torrents to your user cloud.[/I]
+		</news>
+	</extension>
+</addon>
