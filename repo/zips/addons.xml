@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.program.smokin8wizard" name="[COLOR limegreen]Smokin8[/COLOR]Wizard" version="1.0" provider-name="Smokin8">
+<addon id="plugin.program.smokin8wizard" name="[COLOR orange]Smokin8[/COLOR]Wizard" version="1.0" provider-name="Smokin8">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
@@ -16,8 +16,8 @@
     <extension point="xbmc.service" library="startup.py" start="startup" />
 
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">[COLOR limegreen]Smokin8[/COLOR]Wizard</summary>
-        <description lang="en">[COLOR limegreen]Smokin8[/COLOR]Wizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
+        <summary lang="en">[COLOR orange]Smokin8[/COLOR]Wizard</summary>
+        <description lang="en">[COLOR orange]Smokin8[/COLOR]Wizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
         <platform>all</platform>
         <reuselanguageinvoker>false</reuselanguageinvoker>
         <source>https://www.github.com/a4k-openproject/plugin.program.openwizard/</source>

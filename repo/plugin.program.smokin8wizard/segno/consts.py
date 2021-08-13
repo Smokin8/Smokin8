@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+ # -*- coding: utf-8 -*-
 #
 # Copyright (c) 2016 - 2019 -- Lars Heuer - Semagia <http://www.semagia.com/>.
 # All rights reserved.
